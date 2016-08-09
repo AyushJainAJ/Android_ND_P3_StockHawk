@@ -1,0 +1,41 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_deep_purple_500"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/widget_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/material_deep_purple_700">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stock_quotes"
+                android:contentDescription="@string/stock_quotes"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/widget_header_padding"
+                android:paddingLeft="@dimen/widget_header_padding"
+                android:paddingEnd="@dimen/widget_header_padding"
+                android:paddingRight="@dimen/widget_header_padding"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/stock_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>
