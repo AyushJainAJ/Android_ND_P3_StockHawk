@@ -8,15 +8,16 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.gcm.demo.permission.C2D_MESSAGE" />
 
+    <permission
+        android:name="com.google.android.gcm.demo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:supportsRtl="true">
-        <permission
-            android:name="com.google.android.gcm.demo.permission.C2D_MESSAGE"
-            android:protectionLevel="signature" />
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
 
         <activity
             android:name=".activity.StockList"
@@ -28,7 +29,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.StockDetails"/>
+        <activity android:name=".activity.StockDetails" />
 
         <service
             android:name=".service.StockTaskService"

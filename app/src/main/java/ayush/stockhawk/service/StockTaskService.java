@@ -67,7 +67,7 @@ public class StockTaskService extends GcmTaskService {
             urlStringBuilder.append(URLEncoder.encode("select * from yahoo.finance.quotes where symbol "
                     + "in (", "UTF-8"));
         } catch (UnsupportedEncodingException e) {
-
+            e.printStackTrace();
         }
 
         if (params.getTag().equals("init") || params.getTag().equals("periodic")) {
@@ -82,7 +82,7 @@ public class StockTaskService extends GcmTaskService {
                     urlStringBuilder.append(
                             URLEncoder.encode("\"YHOO\",\"TSLA\",\"GOOG\",\"MSFT\")", "UTF-8"));
                 } catch (UnsupportedEncodingException e) {
-
+                    e.printStackTrace();
                 }
             } else if (initQueryCursor != null) {
                 DatabaseUtils.dumpCursor(initQueryCursor);
@@ -99,6 +99,7 @@ public class StockTaskService extends GcmTaskService {
                 try {
                     urlStringBuilder.append(URLEncoder.encode(mStoredSymbols.toString(), "UTF-8"));
                 } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
                 }
             }
         } else if (params.getTag().equals("add")) {
@@ -109,6 +110,7 @@ public class StockTaskService extends GcmTaskService {
             try {
                 urlStringBuilder.append(URLEncoder.encode("\"" + stockInput + "\")", "UTF-8"));
             } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
             }
         }
         // finalize the URL for the API query.
@@ -141,9 +143,11 @@ public class StockTaskService extends GcmTaskService {
                         mContext.sendBroadcast(intent);
                     }
                 } catch (RemoteException | OperationApplicationException e) {
+                    e.printStackTrace();
 
                 }
             } catch (IOException e) {
+                e.printStackTrace();
 
             }
         }

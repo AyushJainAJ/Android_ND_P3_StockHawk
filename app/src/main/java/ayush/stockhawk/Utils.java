@@ -30,6 +30,7 @@ public class Utils {
                 return parseJSON(jsonObject);
             }
         } catch (JSONException e) {
+            e.printStackTrace();
         }
         return null;
     }
@@ -79,6 +80,7 @@ public class Utils {
             }
 
         } catch (JSONException e) {
+            e.printStackTrace();
 
         }
 
@@ -135,6 +137,7 @@ public class Utils {
                 }
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return batchOperations;

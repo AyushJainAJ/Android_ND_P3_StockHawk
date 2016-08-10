@@ -122,9 +122,11 @@ public class HistoricData {
 
                 }catch (IOException e){
                     setHistoricalDataStatus(STATUS_ERROR_SERVER);
+                    e.printStackTrace();
 
                 }catch (JSONException e){
                     setHistoricalDataStatus(STATUS_ERROR_JSON);
+                    e.printStackTrace();
                 }
                 return null;
             }

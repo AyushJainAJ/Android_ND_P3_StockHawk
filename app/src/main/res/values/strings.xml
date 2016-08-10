@@ -13,6 +13,7 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="stock_quotes">Stock Quotes</string>
+    <string name="add_new_stock">Add new stock</string>
     <string name="graph_content_description">Graph showing prices of the stock over time!</string>
 
     <string name="no_data_show">Can\'t show you data over time!</string>
@@ -37,5 +38,5 @@
 
     <string name="loading_stock_data">Loading Stock Data...</string>
     <string name="symbol_details" translatable="false" formatted="true">%s Details</string>
-    <string name="last_12month_comparision">Last 12 months stock comparision</string>
+    <string name="last_12month_comparision">Last 12 months stock comparison</string>
 </resources>
