@@ -1,4 +1,4 @@
-# StockHawk
+# Stock Hawk
 ##Udacity Android Nanodegree program
 ###Project 3
 
