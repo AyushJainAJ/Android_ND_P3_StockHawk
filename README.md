@@ -1,10 +1,11 @@
-# Android_ND_P3_StockHawk
+# StockHawk
+##Udacity Android Nanodegree program
+###Project 3
 
-This is an Android project submitted for Udacity Android Nanodegree program.
-
-The app finds stock prices from the internet and allows users to add stocks to track.
+An application developed to retrieve prices of stocks from the internet and to track stocks of specific company.
 
 Features of this app include : 
+
 1. Graphical view of stock data over time.
 
 2. Widgets to show stock price.
